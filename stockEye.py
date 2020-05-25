@@ -2,6 +2,7 @@
 # Spencer Dyvig, Max Shriver
 import json
 import requests
+import re
 
 
 def callApi():
@@ -14,7 +15,7 @@ def callApi():
     else:
         return 1
 
- 
+
 apicall = callApi()
 print(apicall['userId'])
 
@@ -41,6 +42,27 @@ elif option == "alist":
     # code
     alist_parm = input("Please enter 'STOCK SYMBOL' to add a stock")
 
+    list_text = open('list.txt', 'a')
+
+    list_text.write(alist_parm+",")
+
+    list_text.close()
+
+
 elif option == "rlist":
     # code
     rlist_parm = input("Please enter 'STOCK SYMBOL' to remove a stock")
+
+    f = open('list.txt','r')
+    a = [rlist_parm+',']
+    lst = []
+    for line in f:
+        for word in a:
+            if word in line:
+                line = line.replace(word,'')
+                lst.append(line)
+    f.close()
+    f = open('list.txt','w')
+    for line in lst:
+        f.write(line)
+    f.close()

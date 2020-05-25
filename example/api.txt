@@ -1,3 +1,7 @@
+<<<<<<< HEAD:api.txt
+https://jsonplaceholder.typicode.com/todos/1
+=======
 !!!This file must be moved to the root directory of the script!!!
-
+#
 Please add JSON compatible stocks api here (bare link). The link may only be a tracker that supports comma-separated ticker symbols and must end in the equals (=) symbol -- IEX stocks tracker.
+>>>>>>> 3f7d0ba91e2a466382a8bb24801d5176c8e2e0aa:example/api.txt
