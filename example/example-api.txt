@@ -1,0 +1,3 @@
+!!!This file must be moved to the root directory of the script!!!
+
+Please add JSON compatible stocks api here (bare link). The link may only be a tracker that supports comma-separated ticker symbols and must end in the equals (=) symbol -- IEX stocks tracker.
